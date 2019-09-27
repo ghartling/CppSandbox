@@ -1,0 +1,4 @@
+﻿  stdafx.cpp
+  FavoriteNumber.cpp
+c:\users\ghart\documents\visual studio 2017\projects\win32project\win32project\favoritenumber.cpp(37): warning C4101: 'x': unreferenced local variable
+  Win32Project.vcxproj -> C:\Users\ghart\documents\visual studio 2017\Projects\Win32Project\Debug\Win32Project.lib
