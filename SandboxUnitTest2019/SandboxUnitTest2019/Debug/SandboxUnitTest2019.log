@@ -1,0 +1,14 @@
+﻿  StringUnitTest.cpp
+D:\work\projects\visual studio\SandboxUnitTest2019\SandboxUnitTest2019\StringUnitTest.cpp(49,17): warning C4244: 'initializing': conversion from 'time_t' to 'long', possible loss of data
+D:\work\projects\visual studio\SandboxUnitTest2019\SandboxUnitTest2019\StringUnitTest.cpp(65,19): warning C4477: 'sprintf_s' : format string '%i' requires an argument of type 'int', but variadic argument 4 has type 'time_t'
+D:\work\projects\visual studio\SandboxUnitTest2019\SandboxUnitTest2019\StringUnitTest.cpp(65,19): message : consider using '%lli' in the format string
+D:\work\projects\visual studio\SandboxUnitTest2019\SandboxUnitTest2019\StringUnitTest.cpp(65,19): message : consider using '%I64i' in the format string
+D:\work\projects\visual studio\SandboxUnitTest2019\SandboxUnitTest2019\StringUnitTest.cpp(95,17): warning C4244: 'initializing': conversion from 'time_t' to 'long', possible loss of data
+D:\work\projects\visual studio\SandboxUnitTest2019\SandboxUnitTest2019\StringUnitTest.cpp(111,19): warning C4477: 'sprintf_s' : format string '%i' requires an argument of type 'int', but variadic argument 4 has type 'time_t'
+D:\work\projects\visual studio\SandboxUnitTest2019\SandboxUnitTest2019\StringUnitTest.cpp(111,19): message : consider using '%lli' in the format string
+D:\work\projects\visual studio\SandboxUnitTest2019\SandboxUnitTest2019\StringUnitTest.cpp(111,19): message : consider using '%I64i' in the format string
+D:\work\projects\visual studio\SandboxUnitTest2019\SandboxUnitTest2019\StringUnitTest.cpp(215,21): warning C4778: 'sprintf_s' : unterminated format string '%4l'
+D:\work\projects\visual studio\SandboxUnitTest2019\SandboxUnitTest2019\StringUnitTest.cpp(215,37): warning C4474: 'sprintf_s' : too many arguments passed for format string
+D:\work\projects\visual studio\SandboxUnitTest2019\SandboxUnitTest2019\StringUnitTest.cpp(215,37): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+     Creating library D:\work\projects\visual studio\SandboxUnitTest2019\Debug\SandboxUnitTest2019.lib and object D:\work\projects\visual studio\SandboxUnitTest2019\Debug\SandboxUnitTest2019.exp
+  SandboxUnitTest2019.vcxproj -> D:\work\projects\visual studio\SandboxUnitTest2019\Debug\SandboxUnitTest2019.dll

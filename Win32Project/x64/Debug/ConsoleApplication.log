@@ -1,8 +1,0 @@
-﻿  stdafx.cpp
-  ConsoleFavoriteNumber.cpp
-c:\users\ghart\documents\visual studio 2017\projects\win32project\consoleapplication\consolefavoritenumber.cpp(19): warning C4101: 'x': unreferenced local variable
-  ConsoleApplication.cpp
-  Generating Code...
-c:\users\ghart\documents\visual studio 2017\projects\win32project\consoleapplication\consoleapplication.cpp(13): warning C4700: uninitialized local variable 'age' used
-  ConsoleApplication.vcxproj -> C:\Users\ghart\documents\visual studio 2017\Projects\Win32Project\x64\Debug\ConsoleApplication.exe
-  ConsoleApplication.vcxproj -> C:\Users\ghart\documents\visual studio 2017\Projects\Win32Project\x64\Debug\ConsoleApplication.pdb (Partial PDB)
