@@ -1,4 +1,4 @@
-#include <pch.h>
+#include "pch.h"
 
 #include "CppUnitTest.h"
 #include <vector>
@@ -92,7 +92,6 @@ public:
 	TEST_METHOD(testTimer) {
 		char text[100] = {};
 		time_t now = time(NULL);
-		Timer_T
 		long totalSec = now;
 
 		std::string hhmm = formatTime(totalSec);
