@@ -7,8 +7,6 @@
 #include<ws2tcpip.h>
 #include <string>
 
-#pragma comment(lib,"ws2_32.lib") //Winsock Library
-
 #define _WINSOCK_DEPRECATED_NO_WARNINGS 1
 
 #define BUFLEN 512	//Max length of buffer

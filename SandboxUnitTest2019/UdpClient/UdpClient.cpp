@@ -19,7 +19,6 @@
 #include <ws2tcpip.h>
 #include <string>
 
-#pragma comment(lib,"ws2_32.lib") //Winsock Library
 
 #define SERVER "127.0.0.1"	//ip address of udp server
 #define BUFLEN 512	//Max length of buffer
