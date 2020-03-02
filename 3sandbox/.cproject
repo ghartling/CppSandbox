@@ -43,7 +43,7 @@
                             							
                             <tool id="cdt.managedbuild.tool.gnu.archiver.mingw.base.1741591383" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.mingw.base"/>
                             							
-                            <tool command="g++" id="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.exe.debug.1898202623" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.exe.debug">
+                            <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.exe.debug.1898202623" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.exe.debug">
                                 								
                                 <option id="gnu.cpp.compiler.mingw.exe.debug.option.optimization.level.468787065" name="Optimization Level" superClass="gnu.cpp.compiler.mingw.exe.debug.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
                                 								
@@ -73,7 +73,7 @@
                             							
                             <tool id="cdt.managedbuild.tool.gnu.c.linker.mingw.exe.debug.1068912338" name="MinGW C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.mingw.exe.debug"/>
                             							
-                            <tool command="g++" id="cdt.managedbuild.tool.gnu.cpp.linker.mingw.exe.debug.1154922717" name="MinGW C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.mingw.exe.debug">
+                            <tool id="cdt.managedbuild.tool.gnu.cpp.linker.mingw.exe.debug.1154922717" name="MinGW C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.mingw.exe.debug">
                                 								
                                 <inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1505456958" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
                                     									
