@@ -34,6 +34,12 @@ public:
 
 	}
 
+	TEST_METHOD(testAppendInt) {
+		int i = 1;
+		std::string s = "test" + std::to_string(i);
+		writeMessage("string: ", s.c_str());
+	}
+
 	TEST_METHOD(testVectorOfString) {
 		char c[] = { "test" };
 		//vector<string> s = c;

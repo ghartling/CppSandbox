@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="7" failures="0" disabled="0" errors="0" time="0.001" timestamp="2020-02-19T16:11:17" name="AllTests">
+  <testsuite name="FooTest" tests="1" failures="0" disabled="0" errors="0" time="0" timestamp="2020-02-19T16:11:17">
+    <testcase name="Foo" status="run" result="completed" time="0" timestamp="2020-02-19T16:11:17" classname="FooTest" />
+  </testsuite>
+  <testsuite name="FactorialTest" tests="3" failures="0" disabled="0" errors="0" time="0" timestamp="2020-02-19T16:11:17">
+    <testcase name="Negative" status="run" result="completed" time="0" timestamp="2020-02-19T16:11:17" classname="FactorialTest" />
+    <testcase name="Zero" status="run" result="completed" time="0" timestamp="2020-02-19T16:11:17" classname="FactorialTest" />
+    <testcase name="Positive" status="run" result="completed" time="0" timestamp="2020-02-19T16:11:17" classname="FactorialTest" />
+  </testsuite>
+  <testsuite name="IsPrimeTest" tests="3" failures="0" disabled="0" errors="0" time="0" timestamp="2020-02-19T16:11:17">
+    <testcase name="Negative" status="run" result="completed" time="0" timestamp="2020-02-19T16:11:17" classname="IsPrimeTest" />
+    <testcase name="Trivial" status="run" result="completed" time="0" timestamp="2020-02-19T16:11:17" classname="IsPrimeTest" />
+    <testcase name="Positive" status="run" result="completed" time="0" timestamp="2020-02-19T16:11:17" classname="IsPrimeTest" />
+  </testsuite>
+</testsuites>
