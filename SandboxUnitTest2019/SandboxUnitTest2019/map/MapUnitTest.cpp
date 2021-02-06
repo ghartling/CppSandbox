@@ -13,10 +13,27 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace MapUnitTest
 {
+
+//	using EntityStateMapper = std::map < string, std::tuple < const std::size_t(*)(double, std::size_t)>>;
+	using EntityStateMapper = std::map < string, std::tuple <  std::size_t>>;
+
+		// GET_POSITION
+
+
 	TEST_CLASS(MapUnitTest)
 	{
 	public:
-		
+
+
+		TEST_METHOD(tupleTest) {
+			EntityStateMapper entity_state_functions;
+
+			entity_state_functions["test"] = std::make_tuple(mssv_GroundVehicle_set_array_spatial_position(1.0, 1));
+		}
+
+		const std::size_t   mssv_GroundVehicle_set_array_spatial_position(double x, int y) {
+			return 1;
+		}
 		TEST_METHOD(mapTest)
 		{
 			char m_achDelayDesc[3][25];

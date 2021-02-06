@@ -8,6 +8,9 @@
 #include <array>
 #include <unordered_map>
 #include <time.h>
+#include <ctime>
+#include <chrono>
+#include <iomanip>
 
 //using namespace std;
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -48,120 +51,6 @@ public:
 		//writeMessage("string (c)", std::string(c).c_str());
 
 	}
-
-	TEST_METHOD(testTimeTotalSeconds) {
-		char text[100] = {};
-		time_t now = time(NULL);
-		long totalSec = now ;
-
-		std::string hhmm = formatTime(totalSec);
-		writeMessage("HH:MM ", hhmm.c_str());
-
-		long secPerDay = (3600 * 24);
-		long secPerHour = 3600;
-
-		long days = totalSec / secPerDay;
-		totalSec = totalSec - days * secPerDay;
-
-		long hours = totalSec / secPerHour;
-		totalSec = totalSec - hours * secPerHour;
-
-		long min = totalSec / 60;
-
-		sprintf_s(text, "%02i:%02i, total = %i, now = %i", hours, min, totalSec, now);
-		writeMessage("HH:MM ", text);
-	}
-
-	TEST_METHOD(testDurationSeconds) {
-		char text[100] = {};
-//		time_t now = time(NULL);
-		long totalSec = 45000;
-
-		std::string hhmm = formatTimeDaySeconds(totalSec);
-		writeMessage("HH:MM ", hhmm.c_str());
-
-		long secPerDay = (3600 * 24);
-		long secPerHour = 3600;
-
-		long days = totalSec / secPerDay;
-		totalSec = totalSec - days * secPerDay;
-
-		long hours = totalSec / secPerHour;
-		totalSec = totalSec - hours * secPerHour;
-
-		long min = totalSec / 60;
-
-		sprintf_s(text, "%02i:%02i, total = %i", hours, min, totalSec);
-		writeMessage("HH:MM ", text);
-	}
-
-	TEST_METHOD(testTimer) {
-		char text[100] = {};
-		time_t now = time(NULL);
-		long totalSec = now;
-
-		std::string hhmm = formatTime(totalSec);
-		writeMessage("HH:MM ", hhmm.c_str());
-
-		long secPerDay = (3600 * 24);
-		long secPerHour = 3600;
-
-		long days = totalSec / secPerDay;
-		totalSec = totalSec - days * secPerDay;
-
-		long hours = totalSec / secPerHour;
-		totalSec = totalSec - hours * secPerHour;
-
-		long min = totalSec / 60;
-
-		sprintf_s(text, "%02i:%02i, total = %i, now = %i", hours, min, totalSec, now);
-		writeMessage("HH:MM ", text);
-	}
-
-	std::string formatTimeDaySeconds(long totalTimeInSec) {
-		long totalSec = totalTimeInSec;
-
-		long secPerHour = 3600;
-
-		long hours = totalSec / secPerHour;
-		totalSec = totalSec - hours * secPerHour;
-
-		long min = totalSec / 60;
-
-		char text[100] = {};
-		sprintf_s(text, "%02i:%02i, total = %i, totalTimeInSec = %i", hours, min, totalSec, totalTimeInSec);
-		writeMessage("HH:MM ", text);
-
-		char hhmm[100] = {};
-		sprintf_s(hhmm, "%02i:%02i", hours, min);
-
-		return hhmm;
-	}
-
-	std::string formatTime(long totalTimeInSec) {
-		long totalSec = totalTimeInSec;
-
-		long secPerDay = (3600 * 24);
-		long secPerHour = 3600;
-
-		long days = totalSec / secPerDay;
-		totalSec = totalSec - days * secPerDay;
-
-		long hours = totalSec / secPerHour;
-		totalSec = totalSec - hours * secPerHour;
-
-		long min = totalSec / 60;
-
-		char text[100] = {};
-		sprintf_s(text, "%02i:%02i, total = %i, totalTimeInSec = %i", hours, min, totalSec, totalTimeInSec);
-		writeMessage("HH:MM ", text);
-
-		char hhmm[100] = {};
-		sprintf_s(hhmm, "%02i:%02i", hours, min);
-
-		return hhmm;
-	}
-
 	TEST_METHOD(testInitCharArray) {
 		char c[4][25];
 
@@ -218,7 +107,7 @@ public:
 
 	void writeMessage(char* msg, long val) {
 		char logmsg[256] = {};
-		sprintf_s(logmsg, "%s: %4l", msg, val);
+		sprintf_s(logmsg, "%s: %n", msg, val);
 		Logger::WriteMessage(logmsg);
 
 	}
