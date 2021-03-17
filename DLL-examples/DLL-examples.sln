@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MathLibrary", "MathLibrary\MathLibrary.vcxproj", "{36478062-A264-446D-96D1-0980939A56D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36478062-A264-446D-96D1-0980939A56D1}.Debug|x64.ActiveCfg = Debug|x64
+		{36478062-A264-446D-96D1-0980939A56D1}.Debug|x64.Build.0 = Debug|x64
+		{36478062-A264-446D-96D1-0980939A56D1}.Debug|x86.ActiveCfg = Debug|Win32
+		{36478062-A264-446D-96D1-0980939A56D1}.Debug|x86.Build.0 = Debug|Win32
+		{36478062-A264-446D-96D1-0980939A56D1}.Release|x64.ActiveCfg = Release|x64
+		{36478062-A264-446D-96D1-0980939A56D1}.Release|x64.Build.0 = Release|x64
+		{36478062-A264-446D-96D1-0980939A56D1}.Release|x86.ActiveCfg = Release|Win32
+		{36478062-A264-446D-96D1-0980939A56D1}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE1B33AA-00F6-4270-8D91-22F9F6C79B81}
+	EndGlobalSection
+EndGlobal
